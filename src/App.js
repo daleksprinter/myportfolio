@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Works from './components/Works'
+import Works from './components/Works/Works'
 import Aboutme from './components/Aboutme'
-import Navbar from './components/Navbar'
 import Links from './components/Links'
 
 
 function App() {
   return (
-    <div>
+    <div className = 'app'>
       <BrowserRouter>
         <p>Rapio's Portfolio</p>
         <Link to = '/'>Home</Link>
