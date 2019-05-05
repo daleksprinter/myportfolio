@@ -22,6 +22,23 @@ class Aboutme extends Component{
                     </ul>
                 </div>
 
+                <div className = 'aboutCertification'>
+                    <p>資格等</p>
+                    <ul>
+                        <li>TOEIC 825点（2018年3月11日　取得）</li>
+                        <li>普通自動車運転免許（2015年3月　取得)</li>
+                    </ul>
+                </div>
+
+                <div className = 'aboutHobby'>
+                    <p>趣味</p>
+                    <ul>
+                        <li>Youtube</li>
+                        <li>競技プログラミング</li>
+                        <li>タイピング</li>
+                    </ul>
+                </div>
+
 
             </div>
 
