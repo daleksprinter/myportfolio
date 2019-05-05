@@ -4,18 +4,22 @@ import Home from './components/Home'
 import Works from './components/Works'
 import Aboutme from './components/Aboutme'
 import Navbar from './components/Navbar'
+import Links from './components/Links'
 
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+        <p>Rapio's Portfolio</p>
         <Link to = '/'>Home</Link>
         <Link to = '/works'>Works</Link>
         <Link to = '/aboutme'>AboutMe</Link>
+        <Link to = '/links'>Links</Link>
         <Route exact path = '/' component = {Home}></Route>
         <Route path = '/works' component = {Works}></Route>
         <Route path = '/aboutme' component = {Aboutme}></Route>
+        <Route path = '/Links' component = {Links}></Route>
       </BrowserRouter>
 
     </div>

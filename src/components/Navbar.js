@@ -5,11 +5,7 @@ class Navbar extends Component{
 
     render(){
         return(
-            <div>
-                <Link to = '/'>Home</Link>
-                <Link to = '/works'>Works</Link>
-                <Link to = '/aboutme'>AboutMe</Link>
-            </div>  
+            <div>hoge</div>
         )
     }
 }
