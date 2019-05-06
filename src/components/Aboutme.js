@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Paper from '@material-ui/core/Paper';
 
 class Aboutme extends Component{
 
@@ -6,11 +7,11 @@ class Aboutme extends Component{
         return(
             <div className = 'aboutme'>
                 
-                <div className = 'aboutMeTitle'>
+                <Paper className = 'aboutMeTitle'>
                     <p>自己紹介</p>
-                </div>
+                </Paper>
                 
-                <div className = 'aboutFundamental'>
+                <Paper className = 'aboutFundamental'>
                     <p>基本情報</p>
                     <ul>
                         <li>Name : 関根 遼</li>
@@ -20,24 +21,19 @@ class Aboutme extends Component{
                         <li>Condition : とても健康（やや運動不足）</li>
                         <li>Belongs : 公立はこだて未来大学大学院　情報アーキテクチャ領域</li>
                     </ul>
-                </div>
+                </Paper>
 
-                <div className = 'aboutCertification'>
-                    <p>資格等</p>
-                    <ul>
-                        <li>TOEIC 825点（2018年3月11日　取得）</li>
-                        <li>普通自動車運転免許（2015年3月　取得)</li>
-                    </ul>
-                </div>
 
-                <div className = 'aboutHobby'>
+
+                <Paper className = 'aboutHobby'>
                     <p>趣味</p>
                     <ul>
-                        <li>Youtube</li>
+                        <li>Youtube（英語の技術系動画を見たりします）</li>
                         <li>競技プログラミング</li>
-                        <li>タイピング</li>
+                        <li>タイピング（そんなに早くない。調子いい時で7types/sec）</li>
+                        <li>英語</li>
                     </ul>
-                </div>
+                </Paper>
 
 
             </div>

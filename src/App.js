@@ -5,7 +5,7 @@ import Works from './components/Works/Works'
 import Aboutme from './components/Aboutme'
 import Links from './components/Links'
 import Compprog from './components/Compprog'
-
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -17,12 +17,14 @@ function App() {
         <Link to = '/competitive-programming'>Competitive Programming</Link>
         <Link to = '/aboutme'>AboutMe</Link>
         <Link to = '/links'>Links</Link>
+        <Link to = '/skills'>Skills</Link>
         
         <Route exact path = '/' component = {Home}></Route>
         <Route path = '/works' component = {Works}></Route>
         <Route path = '/competitive-programming' component = {Compprog}></Route>
         <Route path = '/aboutme' component = {Aboutme}></Route>
-        <Route path = '/Links' component = {Links}></Route>
+        <Route path = '/links' component = {Links}></Route>
+        <Route path = '/skills' component = {Skills}></Route>
       </BrowserRouter>
 
     </div>
