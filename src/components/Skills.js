@@ -19,7 +19,7 @@ class Skills extends Component{
                         <li>Processing</li>
                         <li>SQL</li>
                     </ul>
-                    <p>使ってみたことがある程度 → Processing, Ruby, PHP等</p> 
+                    <p>使ってみたことがある程度 → Processing, Ruby, PHP, Swift等</p> 
                     <p>学習中 → Go</p>
 
                     <p>フレームワーク等</p>
@@ -45,6 +45,13 @@ class Skills extends Component{
                     <ul>
                         <li>Mac</li>
                         <li>CentOS</li>
+                    </ul>
+
+                    <p>エディタ</p>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>SublimeText3</li>
+                        <li>Emacs</li>
                     </ul>
 
 

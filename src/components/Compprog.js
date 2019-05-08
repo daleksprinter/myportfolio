@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Paper from '@material-ui/core/Paper'
 
 class Compprog extends Component{
 
     render(){
         return(
-            <div>
+            <Paper>
                 <div>競技プログラミング経歴</div>
 
                 <div>
@@ -33,7 +34,7 @@ class Compprog extends Component{
                     <a href = 'https://dalekspritner.hatenablog.com/'>競技プログラミング覚書ブログ</a>
                 </div>
 
-            </div>
+            </Paper>
         )
     }
 }
