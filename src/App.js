@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Works from './components/Works/Works'
-import Aboutme from './components/Aboutme'
+import Aboutme from './components/Aboutme/Aboutme'
 import Links from './components/Links'
 import Compprog from './components/Compprog'
 import Skills from './components/Skills'
@@ -30,10 +30,10 @@ class Header extends React.Component{
               <Link href = {'/works'} color = 'inherit'>Works</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className = 'navitem'>
-              <Link href = {'/competitive-programming'} color = 'inherit'>CompetitiveProgramming</Link>
+              <Link href = {'/skills'} color = 'inherit'>Skills</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className = 'navitem'>
-              <Link href = {'/skills'} color = 'inherit'>Skills</Link>
+              <Link href = {'/competitive-programming'} color = 'inherit'>CompetitiveProgramming</Link>
             </Typography>
             <Typography variant="h6" color="inherit" className = 'navitem'>
               <Link href = {'/links'} color = 'inherit'>Links</Link>

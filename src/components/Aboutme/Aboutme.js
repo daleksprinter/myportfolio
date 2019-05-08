@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
 import Paper from '@material-ui/core/Paper';
+import hoge from '../../images/face.JPG'
+import './aboutme.css'
 
 class Aboutme extends Component{
 
     render(){
         return(
-            <div className = 'aboutme'>
-                
-                <Paper className = 'aboutMeTitle'>
-                    <p>自己紹介</p>
-                </Paper>
-                
+            <div className = 'aboutme'>    
                 <Paper className = 'aboutFundamental'>
-                    <p>基本情報</p>
+                    <img src = {hoge} className = 'face'></img>
                     <ul>
                         <li>Name : 関根 遼</li>
                         <li>Gender : 男</li>
@@ -20,13 +17,12 @@ class Aboutme extends Component{
                         <li>From : 北海道</li>
                         <li>Condition : とても健康（やや運動不足）</li>
                         <li>Belongs : 公立はこだて未来大学大学院　情報アーキテクチャ領域</li>
+                        <li>Grade : 修士1年 </li>
                     </ul>
                 </Paper>
 
-
-
                 <Paper className = 'aboutHobby'>
-                    <p>趣味</p>
+                    <h3>Hobby</h3>
                     <ul>
                         <li>Youtube（英語の技術系動画を見たりします）</li>
                         <li>競技プログラミング</li>
@@ -34,10 +30,7 @@ class Aboutme extends Component{
                         <li>英語</li>
                     </ul>
                 </Paper>
-
-
             </div>
-
 
         )
     }
