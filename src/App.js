@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Home from './components/Home'
+import Home from './components/Home/Home'
 import Works from './components/Works/Works'
 import Aboutme from './components/Aboutme/Aboutme'
-import Links from './components/Links'
-import Compprog from './components/Compprog'
-import Skills from './components/Skills'
+import Links from './components/Links/Links'
+import Compprog from './components/Compprog/Compprog'
+import Skills from './components/Skills/Skills'
 import { NavItem, Nav, Navbar } from 'react-bootstrap'
 
 import AppBar from '@material-ui/core/AppBar';
