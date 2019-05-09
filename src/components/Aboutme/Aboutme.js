@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Paper from '@material-ui/core/Paper';
-import hoge from '../../images/face.JPG'
+import hoge from '../../images/profiles/face.JPG'
 import './aboutme.css'
 
 class Aboutme extends Component{
@@ -19,6 +19,13 @@ class Aboutme extends Component{
                         <li>Belongs : 公立はこだて未来大学大学院　情報アーキテクチャ領域</li>
                         <li>Grade : 修士1年 </li>
                     </ul>
+                </Paper>
+
+                <Paper className = 'aboutPreferred'>
+                    <p>希望職</p>
+                    <p>現在はWeb系のサーバサイドの専門になりたいと考えています。</p>
+                    <p>競技プログラミング等での経験を経て、ロジカルな実装で処理を高速化することに興味を持つようになりました。</p>
+
                 </Paper>
 
                 <Paper className = 'aboutHobby'>

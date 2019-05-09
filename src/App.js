@@ -19,6 +19,7 @@ class Header extends React.Component{
       
       return(
         <AppBar position = 'static'>
+          <h1>Rapio's Portfolio</h1>
           <Toolbar>
             <Typography variant="h6" color="inherit" className = 'navitem'>
               <Link href = {'/'} color = 'inherit'>Home</Link>

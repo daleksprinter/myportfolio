@@ -7,7 +7,9 @@ class Links extends Component{
             <div>
                 <div>
                     <a href = 'https://github.com/daleksprinter'>GitHub</a>
-                    
+                    <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>Twitter</a>
+                    <a href = 'https://dalekspritner.hatenablog.com/'>はてなブログ</a>
+
                 </div>
             </div>
         )

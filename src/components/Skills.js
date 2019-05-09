@@ -26,6 +26,7 @@ class Skills extends Component{
                     <ul>
                         <li>Monaca</li>
                         <li>Django</li>
+                        <li>Flask</li>
                         <li>React</li>
                     </ul>
 
