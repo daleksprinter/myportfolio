@@ -65,17 +65,37 @@ const Oekaki = () => {
 
 const WorksList = ({match}) => {
     return(
-        <div>
+        <div className = 'workslist'>
             <WorkItem 
                 title = '石別観光アプリ' 
                 to = {`${match.path}/ishibetsu`}
-                description = '詳細'
+                description = ''
             />
-            <WorkItem title = 'SCPガチャシミュレータ' to = {`${match.path}/scpgacha`} />
-            <WorkItem title = 'AClogger' to = {`${match.path}/aclogger`} />
-            <WorkItem title = 'Spock' to = {`${match.path}/spock`} />
-            <WorkItem title = 'ポートフォリオサイト' to = {`${match.path}/portfolio`} />
-            <WorkItem title = 'Oekaki.io' to = {`${match.path}/oekaki`} />
+            <WorkItem 
+                title = 'SCPガチャシミュレータ' 
+                to = {`${match.path}/scpgacha`} 
+                description = ''
+            />
+            <WorkItem 
+                title = 'AClogger' 
+                to = {`${match.path}/aclogger`} 
+                description = ''
+            />
+            <WorkItem 
+                title = 'Spock' 
+                to = {`${match.path}/spock`} 
+                description = ''
+            />
+            <WorkItem 
+                title = 'ポートフォリオサイト' 
+                to = {`${match.path}/portfolio`} 
+                description = ''
+            />
+            <WorkItem 
+                title = 'Oekaki.io' 
+                to = {`${match.path}/oekaki`} 
+                description = ''
+            />
         </div>
         
     )
@@ -88,6 +108,11 @@ const Works = ({match}) => {
             <div>
                 <Route exact path = {`${match.path}`} component = {WorksList}></Route>
                 <Route path = {`${match.path}/ishibetsu`} component = {Ishibetsu}></Route>
+                <Route path = {`${match.path}/scpgacha`} component = {SCPGachaSimulator}></Route>
+                <Route path = {`${match.path}/aclogger`} component = {AClogger}></Route>
+                <Route path = {`${match.path}/portfolio`} component = {Portfolio}></Route>
+                <Route path = {`${match.path}/spock`} component = {Spock}></Route>
+                <Route path = {`${match.path}/oekaki`} component = {Oekaki}></Route>
             </div>
 
         )
