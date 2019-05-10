@@ -6,6 +6,10 @@ import { Route, Link } from 'react-router-dom'
 import func from '../../images/works/ishibetsu/function.png'
 import './works.css'
 
+import ishi_mock from '../../images/works/ishibetsu/phoston_work.jpg'
+import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
+import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
+
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
     return(
@@ -69,17 +73,20 @@ const WorksList = ({match}) => {
             <WorkItem 
                 title = '石別観光アプリ' 
                 to = {`${match.path}/ishibetsu`}
-                description = ''
+                img = {ishi_mock}
+                description = '大学の開発プロジェクトでの成果物です。函館の地元である石別の、観光活性化を目的としたプロジェクトに参加しました。'
             />
             <WorkItem 
                 title = 'SCPガチャシミュレータ' 
                 to = {`${match.path}/scpgacha`} 
-                description = ''
+                img = {scp_mock}
+                description = '無限ガチャシミュレータ(Webアプリ)です。ガチャ欲の発散を目的に作成されました。（自分はガチャゲーをしてません）'
             />
             <WorkItem 
                 title = 'AClogger' 
                 to = {`${match.path}/aclogger`} 
-                description = ''
+                img = {aclogger_mock}
+                description = '各種プログラミグコンテストサイトで問題を解いて、Github風Heatmapに草を生やせるWebアプリです。精進促進を目的として作成されました。'
             />
             <WorkItem 
                 title = 'Spock' 

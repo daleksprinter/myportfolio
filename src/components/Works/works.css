@@ -2,7 +2,9 @@
     width:700px;
     padding:10px;
 }
-
+.work_thumbnail{
+    width:300px;
+}
 .content{
     width: 50%;
 }
