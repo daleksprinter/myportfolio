@@ -13,12 +13,11 @@ const Language = () => {
                     <li>Java</li>
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
+                    <li>node.js</li>
                     <li>Python</li>
                     <li>Processing</li>
                     <li>SQL</li>
                 </ul>
-                <p>使ってみたことがある程度 → Processing, Ruby, PHP, Swift等</p> 
-                <p>学習中 → Go</p>
 
                 <p>フレームワーク等</p>
                 <ul>
@@ -52,6 +51,9 @@ const Language = () => {
                     <li>SublimeText3</li>
                     <li>Emacs</li>
                 </ul>
+
+                <p>使ってみたことがある → Processing, Ruby, PHP, Swift, Express等</p> 
+                <p>学習中 → Go</p>
 
         </Paper>
     )

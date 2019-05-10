@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Paper } from '@material-ui/core';
 import phoston from '../../images/works/ishibetsu/phoston_work.jpg'
+import { Route, Link } from 'react-router-dom'
 
 import func from '../../images/works/ishibetsu/function.png'
 import './works.css'
 
+import WorkItem from './WorkItem'
 const Ishibetsu = () => {
     return(
         <Paper className = 'content'>
@@ -40,15 +42,56 @@ const Ishibetsu = () => {
     )
 }
 
-class Works extends Component{
+const SCPGachaSimulator = () => {
 
-    render(){
-        return(
+}
 
-            <Ishibetsu />
+const AClogger = () => {
+
+}
+
+const Spock = () => {
+
+}
+
+const Portfolio = () => {
+
+}
+
+const Oekaki = () => {
+
+}
+
+
+const WorksList = ({match}) => {
+    return(
+        <div>
+            <WorkItem 
+                title = '石別観光アプリ' 
+                to = {`${match.path}/ishibetsu`}
+                description = '詳細'
+            />
+            <WorkItem title = 'SCPガチャシミュレータ' to = {`${match.path}/scpgacha`} />
+            <WorkItem title = 'AClogger' to = {`${match.path}/aclogger`} />
+            <WorkItem title = 'Spock' to = {`${match.path}/spock`} />
+            <WorkItem title = 'ポートフォリオサイト' to = {`${match.path}/portfolio`} />
+            <WorkItem title = 'Oekaki.io' to = {`${match.path}/oekaki`} />
+        </div>
+        
+    )
+}
+
+const Works = ({match}) => {
+
+    return(
+
+            <div>
+                <Route exact path = {`${match.path}`} component = {WorksList}></Route>
+                <Route path = {`${match.path}/ishibetsu`} component = {Ishibetsu}></Route>
+            </div>
 
         )
-    }
+
 }
 
 export default Works
