@@ -31,7 +31,8 @@ const Codeforces = () => {
             <img src = {codeforces} className = 'codeforcesRate'></img>
 
             <p>リンク</p>
-            <a href = 'https://codeforces.com/profile/b1015120'>Codeforces</a>
+            <a href = 'https://codeforces.com/profile/b1015120'>Codeforces</a><br></br>
+            <a href = 'https://yang33-kassa.jp/Codeforces-Problems/?user=b1015120'>Codeforces Problems</a>
         </Paper>
     )
 }

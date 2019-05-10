@@ -83,7 +83,7 @@ const WorksList = ({match}) => {
                 description = '無限ガチャシミュレータ(Webアプリ)です。ガチャ欲の発散を目的に作成されました。（自分はガチャゲーをしてません）'
             />
             <WorkItem 
-                title = 'AClogger' 
+                title = 'ACLogger' 
                 to = {`${match.path}/aclogger`} 
                 img = {aclogger_mock}
                 description = '各種プログラミグコンテストサイトで問題を解いて、Github風Heatmapに草を生やせるWebアプリです。精進促進を目的として作成されました。'
