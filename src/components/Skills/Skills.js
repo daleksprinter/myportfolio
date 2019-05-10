@@ -4,7 +4,8 @@ import './skills.css'
 
 const Language = () => {
     return(
-        <Paper className = 'skillsLanguage'>
+
+        <Paper>
                 <p>技術系</p>
                 <p>言語</p>
                 <ul>
@@ -17,6 +18,7 @@ const Language = () => {
                     <li>Python</li>
                     <li>Processing</li>
                     <li>SQL</li>
+                    <li>Shell Command</li>
                 </ul>
 
                 <p>フレームワーク等</p>
@@ -32,6 +34,12 @@ const Language = () => {
                 <ul>
                     <li>MySQL</li>
                     <li>Docker</li>
+                </ul>
+
+                <p>開発ツール等</p>
+                <ul>
+                    <li>Git</li>
+
                 </ul>
                 
                 <p>クラウド</p>
@@ -54,7 +62,7 @@ const Language = () => {
                 </ul>
 
                 <p>使ってみたことがある → Processing, Ruby, PHP, Swift等</p> 
-                <p>学習中 → Go</p>
+                <p>学習中 → Go, Nginx</p>
 
         </Paper>
     )
@@ -62,7 +70,7 @@ const Language = () => {
 
 const Certification = () => {
     return(
-        <Paper className = 'skillsCertification'>
+        <Paper>
             <p>資格等</p>
             <ul>
                 <li>TOEIC 825点（2018年3月11日　取得）</li>
@@ -76,7 +84,7 @@ class Skills extends Component{
 
     render(){
         return(
-            <div>
+            <div　className = 'item'>
                 <Language />
                 <Certification />
             </div>

@@ -17,3 +17,7 @@ body{
 .footer{
   border:50px;
 }
+
+.item{
+  width:50%;
+}

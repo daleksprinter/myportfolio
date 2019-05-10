@@ -1,21 +1,11 @@
-.compProgAtcoder{
-    width:50%;
-}
-
-.compProgCodeforces{
-    width:50%;
-
-}
-
-.compProgOther{
-    width:50%;
-
-}
-
 .atcoderRate{
     width:700px;
 }
 
 .codeforcesRate{
     width:700px;
+}
+
+.paizaRank{
+    width:300px;
 }

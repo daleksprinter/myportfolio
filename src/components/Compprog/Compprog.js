@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Paper from '@material-ui/core/Paper'
 import atcoder from '../../images/competitiveprogramming/atcoder.png'
 import codeforces from '../../images/competitiveprogramming/codeforces.png'
+import paizarank from '../../images/competitiveprogramming/paizaRank.png'
 import './compprog.css'
 
 const AtCoder = () => {
@@ -44,6 +45,7 @@ const Other = () => {
             <div>未来大学競技プログラミングサークル FunCoder　所属</div>
             <div>ICPC2019国内予選　参加予定</div>
             <div>Paiza Sランク</div>
+            <img src = {paizarank} className = 'paizaRank'></img><br />
             <a href = 'https://dalekspritner.hatenablog.com/'>競技プログラミング覚書ブログ</a>
         </Paper>
     )
@@ -53,7 +55,7 @@ class Compprog extends Component{
 
     render(){
         return(
-            <div>
+            <div　className = 'item'>
                 <AtCoder />
                 <Codeforces />
                 <Other />

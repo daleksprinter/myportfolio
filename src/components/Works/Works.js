@@ -14,7 +14,7 @@ import spock_logo from '../../images/works/spock/logo.png'
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
     return(
-        <Paper className = 'content'>
+        <Paper className = 'item'>
                 <img src = {phoston} className = 'thumbnail'></img>
                 <h2>石別観光アプリ</h2>
                 
