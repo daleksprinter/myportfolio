@@ -9,6 +9,7 @@ import './works.css'
 import ishi_mock from '../../images/works/ishibetsu/phoston_work.jpg'
 import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
 import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
+import spock_logo from '../../images/works/spock/logo.png'
 
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
@@ -91,7 +92,8 @@ const WorksList = ({match}) => {
             <WorkItem 
                 title = 'Spock' 
                 to = {`${match.path}/spock`} 
-                description = ''
+                img = {spock_logo}
+                description = '外出先で、面白そうな店や建物を見つけたけど、今はいけない...そんな時に、このスマホアプリで写真を撮るだけで、店の情報を読み込み、ストックしておきます。友人と共にハッカソン気分で製作中です。'
             />
             <WorkItem 
                 title = 'ポートフォリオサイト' 
