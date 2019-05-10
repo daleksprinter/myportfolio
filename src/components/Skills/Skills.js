@@ -5,7 +5,7 @@ import './skills.css'
 const Language = () => {
     return(
 
-        <Paper>
+        <Paper className = 'elm'>
                 <p>技術系</p>
                 <p>言語</p>
                 <ul>
@@ -70,7 +70,7 @@ const Language = () => {
 
 const Certification = () => {
     return(
-        <Paper>
+        <Paper className = 'elm'>
             <p>資格等</p>
             <ul>
                 <li>TOEIC 825点（2018年3月11日　取得）</li>

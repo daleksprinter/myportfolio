@@ -6,9 +6,10 @@ class Links extends Component{
         return(
             <div>
                 <div>
-                    <a href = 'https://github.com/daleksprinter'>GitHub</a>
-                    <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>Twitter</a>
-                    <a href = 'https://dalekspritner.hatenablog.com/'>はてなブログ</a>
+                    <a href = 'https://github.com/daleksprinter'>GitHub</a><br />
+                    <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>Twitter</a><br />
+                    <a href = 'https://dalekspritner.hatenablog.com/'>はてなブログ</a><br />
+                    <div>メール daleksprinter@gmail.com</div>
 
                 </div>
             </div>

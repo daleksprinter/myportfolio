@@ -7,7 +7,7 @@ import './compprog.css'
 
 const AtCoder = () => {
     return (
-        <Paper className = 'compProgAtcoder'>
+        <Paper className = 'elm'>
 
             <h3>AtCoder</h3>
             <p>最高レート : 1400</p>
@@ -24,7 +24,7 @@ const AtCoder = () => {
 
 const Codeforces = () => {
     return(
-        <Paper className = 'compProgCodeforces'>
+        <Paper className = 'elm'>
 
             <h3>Codeforces</h3>
             <p>最高レート : 1600</p>
@@ -40,7 +40,7 @@ const Codeforces = () => {
 
 const Other = () => {
     return(
-        <Paper className = 'compProgOther'>
+        <Paper className = 'elm'>
             <h3>その他</h3>
             <div>未来大学競技プログラミングサークル FunCoder　所属</div>
             <div>ICPC2019国内予選　参加予定</div>
