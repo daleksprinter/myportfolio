@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: rgb(243, 243, 243);
+  background-color: gray;
 }
 
 .linkIcon{
@@ -20,4 +20,9 @@ body{
 
 .item{
   width:50%;
+}
+
+.elm{
+  padding:1%;
+  margin:2%;
 }

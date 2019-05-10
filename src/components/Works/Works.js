@@ -33,7 +33,7 @@ const Ishibetsu = () => {
                 <h3>使用技術</h3>
                 <div>クライアントサイド</div>
                 <ul>
-                    <li>Monaca(HTML5ハイブリッドアプリ開発プラットフォーム</li>
+                    <li>Monaca(HTML5ハイブリッドアプリ開発プラットフォーム)</li>
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
                     <li>OnsenUI</li>
