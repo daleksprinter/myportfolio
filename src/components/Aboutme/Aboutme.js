@@ -8,6 +8,7 @@ const Fundamental = () => {
     return(
         <Paper className = 'elm'>
             <img src = {hoge} className = 'avater'></img>
+            <p>基本情報</p>
             <ul>
                 <li>Name : 関根 遼</li>
                 <li>Gender : 男</li>

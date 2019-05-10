@@ -27,7 +27,6 @@ const Language = () => {
                     <li>Django</li>
                     <li>Flask</li>
                     <li>React</li>
-                    <li>Express</li>
                 </ul>
 
                 <p>ミドルウェア等</p>
@@ -61,7 +60,7 @@ const Language = () => {
                     <li>Emacs</li>
                 </ul>
 
-                <p>使ってみたことがある → Processing, Ruby, PHP, Swift等</p> 
+                <p>使ってみたことがある → Processing, Ruby, PHP, Swift, Express等</p> 
                 <p>学習中 → Go, Nginx</p>
 
         </Paper>

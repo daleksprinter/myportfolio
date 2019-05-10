@@ -1,20 +1,21 @@
 .thumbnail{
-    width:700px;
+    width:95%;
     padding:10px;
 }
 .work_thumbnail{
-    width:300px;
-}
-
-
-.func{
-    width:700px;
+    width:100%;
 }
 
 .workitem{
     margin:20px;
-    width:50%;
+    width:30%;
 }
 
 .workslist{
+}
+
+.workview{
+    width:50%;
+    padding:1%;
+    margin:1%;
 }

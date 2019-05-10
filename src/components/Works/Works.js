@@ -14,7 +14,7 @@ import spock_logo from '../../images/works/spock/logo.png'
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
     return(
-        <Paper className = 'item'>
+        <Paper className = 'workview'>
                 <img src = {phoston} className = 'thumbnail'></img>
                 <h2>石別観光アプリ</h2>
                 
@@ -24,7 +24,7 @@ const Ishibetsu = () => {
                 <div>要件定義やチームコミュニケーションなどの点で、多くの失敗と学びを経験しました。</div>   
 
                 <h3>主要機能等</h3>
-                <img src = {func} className = 'func'></img>
+                <img src = {func} className = 'thumbnail'></img>
 
                 <h3>関連リンク</h3>
                 <a href = 'http://www.fun.ac.jp/~sisp/old_report/2017/02/poster02_A.pdf'>発表用ポスター</a><br></br>
@@ -52,7 +52,32 @@ const SCPGachaSimulator = () => {
 }
 
 const AClogger = () => {
+    return(
 
+        <Paper className = 'workview'>
+            <img src = {aclogger_mock} className = 'thumbnail'></img>
+            <h2>ACLogger</h2>
+            <a href = 'https://aclogger.herokuapp.com/'>ACLogger</a>
+            <h3>背景</h3>
+            <div>個人開発でReactを使ってみたかった+各種コンテストサイトでの精進を一目で確認できるツールが欲しかった</div>
+            
+            <h3>主要機能</h3>
+            <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>
+            <div>過去に解いた問題リストの要素をクリックすると、その提出に飛べる</div>
+            <div>今日解いた問題をツイートすることができる</div>
+            <div>対応サイト : AtCoder, Codeforces, yukicoder, AizuOnlineJudge</div>
+
+            <h3>使用技術</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Heroku</li>
+            </ul>
+
+        </Paper>
+
+    )
 }
 
 const Spock = () => {
