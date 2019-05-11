@@ -6,10 +6,12 @@ const WorkItem = ({title, to, img, description}) => {
 
     return(
         <Paper className = 'workitem'>
-            <div>{title}</div>
             <img src = {img} class = 'work_thumbnail'></img>
-            <div>{description}</div>
-            <Link to = {to}>Detial</Link>
+            <div className = 'workitemdesc'>
+                <h3>{title}</h3>
+                <div>{description}</div><br />
+                <Link to = {to}>Detial</Link>
+            </div>
         </Paper>
     )
 }

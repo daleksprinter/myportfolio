@@ -48,7 +48,35 @@ const Ishibetsu = () => {
 }
 
 const SCPGachaSimulator = () => {
+    return(
+        <Paper className = 'workview'>
+            <img src = {scp_mock} class = 'thumbnail'></img>
+            <h2>SCPガチャシミューレータ</h2>
 
+            <a href = 'https://scp-gacha-simulator.herokuapp.com/'>Link</a><br></br>
+
+            <h3>背景</h3>
+            <div>Djangoを使ってみたかった+無限ガチャができる何かを作ってみたかった</div>
+            <div>ガチャのアイテムとしてSCPを使っています。(SCPについては、アプリ内に説明リンク等があります）</div>
+            
+            <h3>主要機能等</h3>
+            <div>ログイン機能</div>
+            <div>ガチャ機能</div>
+            <div>ポイントチャージ機能（無料）（課金した気持ちになりたい）</div>
+            <p>今後追加したい要素</p>
+            <div>ガチャ演出</div>
+            <div>得られたアイテムでなにかできる</div>
+
+            <h3>使用技術</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>Django</li>
+                <li>AWS S3</li>
+                <li>heroku</li>
+            </ul>
+
+        </Paper>
+    )
 }
 
 const AClogger = () => {
@@ -106,7 +134,7 @@ const WorksList = ({match}) => {
                 title = 'SCPガチャシミュレータ' 
                 to = {`${match.path}/scpgacha`} 
                 img = {scp_mock}
-                description = '無限ガチャシミュレータ(Webアプリ)です。ガチャ欲の発散を目的に作成されました。（自分はガチャゲーをしてません）'
+                description = '無限ガチャシミュレータ(Webアプリ)です。ガチャ欲の発散を目的に作成されました。'
             />
             <WorkItem 
                 title = 'ACLogger' 
