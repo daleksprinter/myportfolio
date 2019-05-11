@@ -166,7 +166,7 @@ const Works = ({match}) => {
 
     return(
 
-            <div>
+            <div className = 'main'>
                 <Route exact path = {`${match.path}`} component = {WorksList}></Route>
                 <Route path = {`${match.path}/ishibetsu`} component = {Ishibetsu}></Route>
                 <Route path = {`${match.path}/scpgacha`} component = {SCPGachaSimulator}></Route>

@@ -1,6 +1,5 @@
 .thumbnail{
-    width:95%;
-    padding:10px;
+    width:100%;
 }
 .work_thumbnail{
     width:100%;
@@ -9,16 +8,16 @@
 .workitem{
     height:550px;
     margin:1%;
-    width:45%;
+    width:48%;
     float:left;
 }
 
-.workslist{
-    width:70%;
+.main{
+    margin:auto;
+    width:60%;
 }
 
 .workview{
-    width:50%;
     padding:1%;
     margin:1%;
 }

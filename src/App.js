@@ -19,7 +19,7 @@ class Header extends React.Component{
       return(
         <AppBar position = 'static'>
           <h1>Rapio's Portfolio</h1>
-          <Toolbar>
+          <Toolbar className = 'toolbar'>
             <Typography variant="h6" color="inherit" className = 'navitem'>
               <Link to = {'/'} color = 'inherit'>Home</Link>
             </Typography>
@@ -37,10 +37,7 @@ class Header extends React.Component{
             </Typography>
             <Typography variant="h6" color="inherit" className = 'navitem'>
               <Link to = {'/links'} color = 'inherit'>Links</Link>
-            </Typography>
-
-            
-            
+            </Typography>        
           </Toolbar>
         </AppBar>
       )
@@ -69,13 +66,14 @@ function App() {
       <BrowserRouter>
         
         <Header />
-        
-        <Route exact path = '/' component = {Home}></Route>
-        <Route path = '/works' component = {Works}></Route>
-        <Route path = '/competitive-programming' component = {Compprog}></Route>
-        <Route path = '/aboutme' component = {Aboutme}></Route>
-        <Route path = '/links' component = {Links}></Route>
-        <Route path = '/skills' component = {Skills}></Route>
+
+          <Route exact path = '/' component = {Home}></Route>
+          <Route path = '/works' component = {Works}></Route>
+          <Route path = '/competitive-programming' component = {Compprog}></Route>
+          <Route path = '/aboutme' component = {Aboutme}></Route>
+          <Route path = '/links' component = {Links}></Route>
+          <Route path = '/skills' component = {Skills}></Route>
+
 
 
       </BrowserRouter>
