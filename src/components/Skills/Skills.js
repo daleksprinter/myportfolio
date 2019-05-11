@@ -32,13 +32,12 @@ const Language = () => {
                 <p>ミドルウェア等</p>
                 <ul>
                     <li>MySQL</li>
-                    <li>Docker</li>
                 </ul>
 
                 <p>開発ツール等</p>
                 <ul>
                     <li>Git</li>
-
+                    <li>Docker</li>
                 </ul>
                 
                 <p>クラウド</p>
@@ -84,8 +83,8 @@ class Skills extends Component{
     render(){
         return(
             <div　className = 'item'>
-                <Language />
                 <Certification />
+                <Language />
             </div>
 
         )
