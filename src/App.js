@@ -18,7 +18,10 @@ class Header extends React.Component{
       
       return(
         <AppBar position = 'static'>
-          <h1>Rapio's Portfolio</h1>
+            <Typography variant="h5" color="inherit" className = 'navitem'>
+              Rapio's Portfolio
+            </Typography>
+          <div className = 'navbarmenu'>
           <Toolbar className = 'toolbar'>
             <Typography variant="h6" color="inherit" className = 'navitem'>
               <Link to = {'/'} color = 'inherit'>Home</Link>
@@ -39,6 +42,7 @@ class Header extends React.Component{
               <Link to = {'/links'} color = 'inherit'>Links</Link>
             </Typography>        
           </Toolbar>
+          </div>
         </AppBar>
       )
 

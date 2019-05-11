@@ -11,6 +11,7 @@ import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
 import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
 import spock_logo from '../../images/works/spock/logo.png'
 import portfolio_mock from '../../images/works/portfolio/portfolio_mock.png'
+import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
 
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
@@ -187,7 +188,7 @@ const WorksList = ({match}) => {
             <WorkItem 
                 title = 'ACLogger' 
                 to = {`${match.path}/aclogger`} 
-                img = {aclogger_mock}
+                img = {aclogger_logo}
                 description = '各種プログラミグコンテストサイトで問題を解いて、Github風Heatmapに草を生やせるWebアプリです。精進促進を目的として作成されました。'
             />
             <WorkItem 

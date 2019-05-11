@@ -2,7 +2,11 @@
   text-align: center;
 }
 .navitem{
-  padding:20px;
+
+}
+.navbarmenu{
+  float:left;
+  margin:auto;
 }
 
 body{
@@ -20,6 +24,7 @@ body{
 
 .item{
   width:50%;
+  margin:auto;
 }
 
 .elm{

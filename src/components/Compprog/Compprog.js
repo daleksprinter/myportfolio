@@ -12,7 +12,7 @@ const AtCoder = () => {
             <h3>AtCoder</h3>
             <p>最高レート : 1400</p>
 
-            <img src = {atcoder} className = 'atcoderRate'></img>
+            <img src = {atcoder} className = 'thumbnail'></img>
 
             <p>リンク</p>
             <a href = 'https://atcoder.jp/users/daleksprinter'>AtCoder</a><br></br>
@@ -29,7 +29,7 @@ const Codeforces = () => {
             <h3>Codeforces</h3>
             <p>最高レート : 1600</p>
 
-            <img src = {codeforces} className = 'codeforcesRate'></img>
+            <img src = {codeforces} className = 'thumbnail'></img>
 
             <p>リンク</p>
             <a href = 'https://codeforces.com/profile/b1015120'>Codeforces</a><br></br>
