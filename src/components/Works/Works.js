@@ -17,6 +17,17 @@ import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
 import aclogger_tweet from '../../images/works/aclogger/tweet.png'
 
 import WorkItem from './WorkItem'
+
+const BackButton = () => {
+    return(
+        <div className = 'backbutton'>
+            <Button variant="contained">
+                <Link to = './'>←Back</Link>
+            </Button>   
+        </div>
+    )
+}
+
 const Ishibetsu = () => {
     return(
         <div>
@@ -47,9 +58,7 @@ const Ishibetsu = () => {
                         <li>PHP</li>
                     </ul>
             </Paper>
-            <Button variant="contained">
-                <Link to = './'>←Back</Link>
-            </Button>
+            <BackButton />
         </div>
     )
 }
@@ -83,9 +92,8 @@ const SCPGachaSimulator = () => {
                     <li>heroku</li>
                 </ul>
             </Paper>
-            <Button variant="contained">
-                <Link to = './'>←Back</Link>
-            </Button>
+            <BackButton />
+
         </div>
     )
 }
@@ -104,6 +112,7 @@ const AClogger = () => {
                 
                 <h3>主要機能</h3>
                 <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>
+                <div>(アカウントをお持ちでない方は、僕のAtCoderID(daleksprinter)をAtCoderの欄に入力してみてください。)</div>
                 <div>過去に解いた問題リストの要素をクリックすると、その提出に飛べる</div>
                 <div>今日解いた問題をツイートすることができる</div>
                 <div>対応サイト : AtCoder, Codeforces, yukicoder, AizuOnlineJudge</div>
@@ -118,9 +127,7 @@ const AClogger = () => {
                 </ul>
 
             </Paper>
-            <Button variant="contained">
-                <Link to = './'>←Back</Link>
-            </Button>
+            <BackButton />
         </div>
     )
 }
@@ -155,9 +162,7 @@ const Spock = () => {
                         <li>AWS EC2</li>
                     </ul>
             </Paper>
-            <Button variant="contained">
-                <Link to = './'>←Back</Link>
-            </Button>
+            <BackButton />
         </div>
     )
 }
@@ -185,9 +190,7 @@ const Portfolio = () => {
                 <div>随時更新中です。</div>
 
             </Paper>
-            <Button variant="contained">
-                <Link to = './'>←Back</Link>
-            </Button>
+            <BackButton />
         </div>
     )
 }
