@@ -6,8 +6,10 @@ import './aboutme.css'
 
 const Fundamental = () => {
     return(
-        <Paper className = 'elm'>
-            <img src = {hoge} className = 'avater'></img>
+        <Paper className = 'me'>
+            <div className = 'av'>
+                <img src = {hoge} className = 'avater'></img>
+            </div>
             <p>基本情報</p>
             <ul>
                 <li>Name : 関根 遼</li>
@@ -72,14 +74,14 @@ class Aboutme extends Component{
 
     render(){
         return(
-            <div className = 'item'>    
-                
+            <div>
                 <Fundamental />
-                <PreferredJob />
-                <Hobby />
-                <Intern />
-                <Msg />
-
+                <div className = 'item'>    
+                    <Hobby />
+                    <Intern />
+                    <PreferredJob />
+                    <Msg />
+                </div>
             </div>
 
         )

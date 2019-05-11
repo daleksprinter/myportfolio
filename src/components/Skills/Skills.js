@@ -59,7 +59,7 @@ const Language = () => {
                     <li>Emacs</li>
                 </ul>
 
-                <p>使ってみたことがある → Processing, Ruby, PHP, Swift, Express等</p> 
+                <p>使ってみたことがある → Processing, Ruby, PHP, Swift, Express, Unity等</p> 
                 <p>学習中 → Go, Nginx</p>
 
         </Paper>
