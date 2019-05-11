@@ -14,6 +14,7 @@ import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
 import spock_logo from '../../images/works/spock/logo.png'
 import portfolio_mock from '../../images/works/portfolio/portfolio_mock.png'
 import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
+import aclogger_tweet from '../../images/works/aclogger/tweet.png'
 
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
@@ -98,6 +99,8 @@ const AClogger = () => {
                 <a href = 'https://aclogger.herokuapp.com/'>ACLogger</a>
                 <h3>背景</h3>
                 <div>個人開発でReactを使ってみたかった+各種コンテストサイトでの精進を一目で確認できるツールが欲しかった</div>
+
+                <img src = {aclogger_tweet} className = 'tweet'></img>
                 
                 <h3>主要機能</h3>
                 <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>

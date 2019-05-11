@@ -25,3 +25,8 @@
 .workitemdesc{
     padding:1%;
 }
+
+.tweet{
+    border:solid 1px rgb(173, 173, 173);
+    width:50%;
+}
