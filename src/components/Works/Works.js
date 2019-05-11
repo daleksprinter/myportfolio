@@ -10,6 +10,7 @@ import ishi_mock from '../../images/works/ishibetsu/phoston_work.jpg'
 import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
 import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
 import spock_logo from '../../images/works/spock/logo.png'
+import portfolio_mock from '../../images/works/portfolio/portfolio_mock.png'
 
 import WorkItem from './WorkItem'
 const Ishibetsu = () => {
@@ -113,7 +114,27 @@ const Spock = () => {
 }
 
 const Portfolio = () => {
+    return(
+        <Paper className = 'workview'>
+            <img src = {portfolio_mock} className = 'thumbnail'></img>
+            <h2>Portfolio</h2>
+            <p>このサイトです</p>
+            
+            <h3>背景</h3>
+            <div>就活等で自分を知っていただくために作成しました。</div>
 
+            
+            <h3>使用技術</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React, Router</li>
+            </ul>
+
+            <div>随時更新中です。</div>
+
+        </Paper>
+    )
 }
 
 const Oekaki = () => {
@@ -150,8 +171,9 @@ const WorksList = ({match}) => {
             />
             <WorkItem 
                 title = 'ポートフォリオサイト' 
-                to = {`${match.path}/portfolio`} 
-                description = ''
+                to = {`${match.path}/portfolio`}
+                img = {portfolio_mock} 
+                description = 'このサイトです。僕について知っていただくために作成されました。'
             />
             <WorkItem 
                 title = 'Oekaki.io' 
