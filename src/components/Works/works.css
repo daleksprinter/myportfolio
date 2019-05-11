@@ -7,11 +7,14 @@
 }
 
 .workitem{
-    margin:20px;
-    width:30%;
+    height:550px;
+    margin:1%;
+    width:45%;
+    float:left;
 }
 
 .workslist{
+    width:70%;
 }
 
 .workview{
