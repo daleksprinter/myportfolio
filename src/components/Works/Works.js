@@ -38,9 +38,6 @@ const Ishibetsu = () => {
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
                     <li>OnsenUI</li>
-                </ul>
-                <div>サーバサイド</div>
-                <ul>
                     <li>MySQL</li>
                     <li>PHP</li>
                 </ul>
@@ -101,6 +98,7 @@ const AClogger = () => {
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>React-bootstrap</li>
                 <li>Heroku</li>
             </ul>
 
@@ -110,7 +108,35 @@ const AClogger = () => {
 }
 
 const Spock = () => {
+    return(
+        <Paper className = 'workview'>
+                <img src = {spock_logo} className = 'thumbnail'></img>
+                <h2>Spock</h2>
+                
+                <h3>背景</h3>
+                <div>友人とGWにハッカソン的なことをしようという話になり、製作されました。</div>
+                <div>「お出かけ」をテーマにしました。</div>
+                <div>外出先で見つけたお店などについてすぐ情報を得られ、ストックできるようにということを目標としました。</div>   
+                <div>自分の担当はサーバサイド です。APIの実装を行なっています。</div>
 
+                <h3>主要機能等</h3>
+                <ul>
+                    <li>ユーザの追加</li>
+                    <li>写真を撮るとその建物のデータを取得する（実装中）</li>
+                    <li>撮った写真、取得したデータ、追加メモ等、スポットデータのCRUD</li>
+                </ul>
+
+                <h3>使用技術</h3>
+                <ul>
+                    <li>Swift</li>
+                    <li>Flask</li>
+                    <li>AWS S3</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                    <li>AWS EC2</li>
+                </ul>
+            </Paper>
+    )
 }
 
 const Portfolio = () => {
@@ -129,6 +155,7 @@ const Portfolio = () => {
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
                 <li>React, Router</li>
+                <li>Material-UI</li>
             </ul>
 
             <div>随時更新中です。</div>
