@@ -48,9 +48,8 @@ const Ishibetsu = () => {
                     <a href = 'https://digital.hakoshin.jp/date/2018-03-04/31816'>新聞記事</a>
 
                     <h3>使用技術</h3>
-                    <div>クライアントサイド</div>
                     <ul>
-                        <li>Monaca(HTML5ハイブリッドアプリ開発プラットフォーム)</li>
+                        <li>Cordova</li>
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>OnsenUI</li>

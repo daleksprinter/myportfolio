@@ -13,6 +13,8 @@ import hoge from './images/profiles/face.JPG'
 import './App.css'
 import { Toolbar, Typography, AppBar} from '@material-ui/core';
 
+import { IoLogoGithub,  IoLogoTwitter } from 'react-icons/io'
+
 const NavItem = ({to, name}) => {
   return(
     <div className = 'navitem'>
@@ -23,10 +25,7 @@ const NavItem = ({to, name}) => {
   )
 }
 
-class Header extends React.Component{
-
-    render(){
-      
+const Header = () => {
       return(
         <AppBar position = 'static'>
             <Typography variant="h5" color="inherit">
@@ -44,7 +43,6 @@ class Header extends React.Component{
         </AppBar>
       )
 
-    }
 }
 
 const Fundamental = () => {
@@ -65,6 +63,15 @@ const Fundamental = () => {
               <li>Department : 情報アーキテクチャ領域</li>
               <li>Grade : 修士1年 </li>
           </ul>
+          <div className = 'lnk'>
+                <a href = 'https://github.com/daleksprinter'>
+                  <IoLogoGithub size = '40' className = 'socialicon' />                
+                </a>
+
+                <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>
+                  <IoLogoTwitter size = '40' className = 'socialicon'/>
+                </a>
+          </div>
       </Paper>
   )
 }

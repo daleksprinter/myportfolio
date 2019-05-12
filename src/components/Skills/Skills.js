@@ -23,10 +23,10 @@ const Language = () => {
 
                 <p>フレームワーク等</p>
                 <ul>
-                    <li>Monaca</li>
                     <li>Django</li>
                     <li>Flask</li>
                     <li>React</li>
+                    <li>Cordova</li>
                 </ul>
 
                 <p>ミドルウェア等</p>
