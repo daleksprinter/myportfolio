@@ -10,6 +10,7 @@ import Skills from './components/Skills/Skills'
 
 import hoge from './images/profiles/face.JPG'
 
+
 import './App.css'
 import { Toolbar, Typography, AppBar} from '@material-ui/core';
 
@@ -18,8 +19,8 @@ import { IoLogoGithub,  IoLogoTwitter } from 'react-icons/io'
 const NavItem = ({to, name}) => {
   return(
     <div className = 'navitem'>
-      <Typography variant="h6" color="inherit">
-        <Link to = {to} color = 'inherit'>{name}</Link>
+      <Typography variant="h6" color='default'>
+        <Link to = {to}>{name}</Link>
       </Typography>
     </div>
   )
@@ -28,11 +29,11 @@ const NavItem = ({to, name}) => {
 const Header = () => {
       return(
         <AppBar position = 'static'>
-            <Typography variant="h5" color="inherit">
-              Rapio's Portfolio
+            <Typography variant="h5" color="inherit" className = 'blogtitle'>
+              <div className = 'blogfont'>Rapio's Portfolio</div>
             </Typography>
           <div className = 'navbarmenu'>
-            <Toolbar>
+            <Toolbar color = 'inherit'>
               <NavItem to = '/' name = 'Home' />
               <NavItem to = '/aboutme' name = 'AboutMe' />
               <NavItem to = '/works' name = 'Works' />
@@ -53,11 +54,10 @@ const Fundamental = () => {
           </div>
           <p>基本情報</p>
           <ul>
-              <li>Name : 関根 遼</li>
+              <li>Handle : らぴお</li>
               <li>Gender : 男</li>
               <li>Age : 22</li>
-              <li>From : 北海道</li>
-              <li>Condition : とても健康（やや運動不足）</li>
+              <li>Condition : とても健康</li>
               <li>Major : 情報科学</li>
               <li>Belongs : 公立はこだて未来大学大学院　</li>
               <li>Department : 情報アーキテクチャ領域</li>
@@ -80,7 +80,6 @@ function App() {
   return (
     <div className = 'app'>
       <BrowserRouter>
-        
         <Header />
         <Fundamental />
         <Route exact path = '/' component = {Home}></Route>

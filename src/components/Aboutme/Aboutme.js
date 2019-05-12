@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import classNames from 'classnames'
 import Paper from '@material-ui/core/Paper';
 
 import './aboutme.css'
@@ -23,7 +22,7 @@ const Hobby = () => {
             <ul>
                 <li>Youtube（英語の技術系動画を見たりします）</li>
                 <li>競技プログラミング</li>
-                <li>タイピング（そんなに早くない。調子いい時で7types/sec）</li>
+                <li>タイピング（そんなに早くないです。調子いい時で7types/sec）</li>
                 <li>英語</li>
             </ul>
         </Paper>

@@ -8,6 +8,20 @@
 
 }
 
+.headerimg{
+  width:100%;
+}
+
+.blogtitle{
+
+  text-align: center;
+}
+.blogfont{
+  padding:20px;
+  font-size: 50px;
+  font-family: cursive;
+}
+
 body{
   background-color: rgb(231, 231, 231);
 }
