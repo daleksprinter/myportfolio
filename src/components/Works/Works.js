@@ -151,6 +151,10 @@ const Spock = () => {
                         <li>撮った写真、取得したデータ、追加メモ等、スポットデータのCRUD</li>
                     </ul>
 
+                    <h3>担当</h3>
+                    <div>Flaskを利用したAPIの作成を行いました。ユーザやデータのCRUD部分の実装を行いました。</div>
+                    <div>デプロイはAWS EC2 + Docker + uWSGI + Nginxの構成です。</div>
+
                     <h3>使用技術</h3>
                     <ul>
                         <li>Swift(他メンバー担当）</li>

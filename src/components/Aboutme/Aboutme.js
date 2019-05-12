@@ -9,7 +9,7 @@ import './aboutme.css'
 const PreferredJob = () => {
     return(
         <Paper className = 'elm'>
-            <p>希望職</p>
+            <h4>希望職</h4>
             <p>現在はWeb系のサーバサイドの専門になりたいと考えています。</p>
             <p>競技プログラミング等での経験を経て、ロジカルな実装で処理を高速化することに興味を持つようになりました。</p>
         </Paper>
@@ -19,7 +19,7 @@ const PreferredJob = () => {
 const Hobby = () => {
     return(
         <Paper className = 'elm'>
-            <p>趣味</p>
+            <h4>趣味</h4>
             <ul>
                 <li>Youtube（英語の技術系動画を見たりします）</li>
                 <li>競技プログラミング</li>
@@ -33,7 +33,7 @@ const Hobby = () => {
 const Intern = () => {
     return(
         <Paper className = 'elm'>
-            <p>インターン</p>
+            <h4>インターン</h4>
             <ul>
                 <li>株式会社ソリューションアンドテクノロジー 技術職インターン ２週間</li>
             </ul>
@@ -45,7 +45,7 @@ const Intern = () => {
 const Msg = () => {
     return(
         <Paper className = 'elm'>
-            <p>ひとこと</p>
+            <h4>ひとこと</h4>
             <div>まだまだ伸び代だらけの身ではありますが、技術の勉強や話をするのが好きなので、同じ思いを持つ仲間と働きたいと考えています。</div>
         </Paper>
     )

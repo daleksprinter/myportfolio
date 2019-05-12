@@ -6,7 +6,7 @@ const Language = () => {
     return(
 
         <Paper className = 'elm'>
-                <p>技術系</p>
+                <h4>技術系</h4>
                 <p>言語</p>
                 <ul>
                     <li>C</li>
@@ -69,7 +69,7 @@ const Language = () => {
 const Certification = () => {
     return(
         <Paper className = 'elm'>
-            <p>資格等</p>
+            <h4>資格等</h4>
             <ul>
                 <li>TOEIC 825点（2018年3月11日　取得）</li>
                 <li>普通自動車運転免許（2015年3月　取得)</li>

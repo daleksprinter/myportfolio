@@ -9,7 +9,7 @@ const AtCoder = () => {
     return (
         <Paper className = 'elm'>
 
-            <h3>AtCoder</h3>
+            <h4>AtCoder</h4>
             <p>最高レート : 1400</p>
 
             <img src = {atcoder} className = 'thumbnail'></img>
@@ -26,7 +26,7 @@ const Codeforces = () => {
     return(
         <Paper className = 'elm'>
 
-            <h3>Codeforces</h3>
+            <h4>Codeforces</h4>
             <p>最高レート : 1600</p>
 
             <img src = {codeforces} className = 'thumbnail'></img>
@@ -41,7 +41,7 @@ const Codeforces = () => {
 const Other = () => {
     return(
         <Paper className = 'elm'>
-            <h3>その他</h3>
+            <h4>その他</h4>
             <div>未来大学競技プログラミングサークル FunCoder　所属</div>
             <div>ICPC2019国内予選　参加予定</div>
             <div>Paiza Sランク</div>
