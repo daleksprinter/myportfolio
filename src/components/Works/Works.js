@@ -99,6 +99,7 @@ const SCPGachaSimulator = () => {
                     <li>Django</li>
                     <li>AWS S3</li>
                     <li>heroku</li>
+                    <li>virtualenv</li>
                 </ul>
             </Paper>
             <BackButton />
