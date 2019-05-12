@@ -154,12 +154,12 @@ const Spock = () => {
 
                     <h3>使用技術</h3>
                     <ul>
-                        <li>Swift</li>
+                        <li>Swift(他メンバー担当）</li>
                         <li>Flask</li>
                         <li>AWS S3</li>
+                        <li>AWS EC2</li>
                         <li>MySQL</li>
                         <li>Docker</li>
-                        <li>AWS EC2</li>
                     </ul>
             </Paper>
             <BackButton />
@@ -196,6 +196,14 @@ const Portfolio = () => {
 }
 
 const Oekaki = () => {
+    return(
+        <div>
+            <Paper className = 'workview'>
+                <p>in preparation...</p>
+            </Paper>
+            <BackButton />
+        </div>
+    )
 
 }
 
@@ -236,7 +244,7 @@ const WorksList = ({match}) => {
             <WorkItem 
                 title = 'Oekaki.io' 
                 to = {`${match.path}/oekaki`} 
-                description = ''
+                description = 'in preparation'
             />
         </div>
     )

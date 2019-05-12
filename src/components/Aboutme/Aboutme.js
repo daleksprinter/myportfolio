@@ -1,29 +1,10 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import Paper from '@material-ui/core/Paper';
-import hoge from '../../images/profiles/face.JPG'
+
 import './aboutme.css'
 
-const Fundamental = () => {
-    return(
-        <Paper className = 'me'>
-            <div className = 'av'>
-                <img src = {hoge} className = 'avater'></img>
-            </div>
-            <p>基本情報</p>
-            <ul>
-                <li>Name : 関根 遼</li>
-                <li>Gender : 男</li>
-                <li>Age : 22</li>
-                <li>From : 北海道</li>
-                <li>Condition : とても健康（やや運動不足）</li>
-                <li>Belongs : 公立はこだて未来大学大学院　</li>
-                <li>Department : 情報アーキテクチャ領域</li>
-                <li>Grade : 修士1年 </li>
-            </ul>
-        </Paper>
-    )
-}
+
 
 const PreferredJob = () => {
     return(
@@ -74,15 +55,14 @@ class Aboutme extends Component{
 
     render(){
         return(
-            <div>
-                <Fundamental />
+
                 <div className = 'item'>    
                     <Hobby />
                     <Intern />
                     <PreferredJob />
                     <Msg />
                 </div>
-            </div>
+
 
         )
     }

@@ -1,12 +1,11 @@
-.navbar{
-  text-align: center;
-}
 .navitem{
-  padding : 0% 2%;
+  padding:20px;
 }
 .navbarmenu{
   float:left;
+
   margin:auto;
+
 }
 
 body{
