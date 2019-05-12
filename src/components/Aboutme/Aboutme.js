@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import Paper from '@material-ui/core/Paper';
 
-import './aboutme.css'
-
-
-
 const PreferredJob = () => {
     return(
         <Paper className = 'elm'>
@@ -61,7 +57,6 @@ class Aboutme extends Component{
                     <PreferredJob />
                     <Msg />
                 </div>
-
 
         )
     }

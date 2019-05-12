@@ -13,12 +13,14 @@ import hoge from './images/profiles/face.JPG'
 
 import './App.css'
 import { Toolbar, Typography, AppBar} from '@material-ui/core';
-
 import { IoLogoGithub,  IoLogoTwitter } from 'react-icons/io'
 
 const NavItem = ({to, name}) => {
+  const style = {
+    'padding' : 20,
+  }
   return(
-    <div className = 'navitem'>
+    <div style = {style}>
       <Typography variant="h6" color='default'>
         <Link to = {to}>{name}</Link>
       </Typography>
@@ -27,12 +29,24 @@ const NavItem = ({to, name}) => {
 }
 
 const Header = () => {
+
+      const navbarmenu = {
+        'float':'left',
+        'margin':'auto',
+      }
+
+      const blogfont = {
+        'padding':20,
+        'font-size': 50,
+        'font-family': 'cursive',
+      }
+
       return(
         <AppBar position = 'static'>
-            <Typography variant="h5" color="inherit" className = 'blogtitle'>
-              <div className = 'blogfont'>Rapio's Portfolio</div>
+            <Typography variant="h5" color="inherit" style = {{'text-align':'center',}}>
+              <div style = {blogfont}>Rapio's Portfolio</div>
             </Typography>
-          <div className = 'navbarmenu'>
+          <div style = {navbarmenu}>
             <Toolbar color = 'inherit'>
               <NavItem to = '/' name = 'Home' />
               <NavItem to = '/aboutme' name = 'AboutMe' />
@@ -47,10 +61,36 @@ const Header = () => {
 }
 
 const Fundamental = () => {
+
+  const me = {
+    'position':'fixed',
+    'margin-top': '2%',
+    'right':'0%',
+    'width': '18%',
+    'padding':'1%',
+  }
+
+  const av = {
+    'text-align': 'center',
+  }
+
+  const avater = {
+    'width':'50%',
+    'border-radius': '50%',
+  }
+
+  const socialicon = {
+    'margin': '3%',
+  }
+
+  const sociallink = {
+    'margin':'auto',
+    'text-align': 'center',
+  }
   return(
-      <Paper className = 'me'>
-          <div className = 'av'>
-              <img src = {hoge} className = 'avater'></img>
+      <Paper style = {me}>
+          <div style = {av}>
+              <img src = {hoge} style = {avater}></img>
           </div>
           <p>基本情報</p>
           <ul>
@@ -63,13 +103,13 @@ const Fundamental = () => {
               <li>Department : 情報アーキテクチャ領域</li>
               <li>Grade : 修士1年 </li>
           </ul>
-          <div className = 'lnk'>
+          <div style = {sociallink}>
                 <a href = 'https://github.com/daleksprinter'>
-                  <IoLogoGithub size = '40' className = 'socialicon' />                
+                  <IoLogoGithub size = '40' style = {socialicon} />                
                 </a>
 
                 <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>
-                  <IoLogoTwitter size = '40' className = 'socialicon'/>
+                  <IoLogoTwitter size = '40' style = {socialicon}/>
                 </a>
           </div>
       </Paper>

@@ -3,11 +3,7 @@ import { Paper, Button} from '@material-ui/core';
 import phoston from '../../images/works/ishibetsu/phoston_work.jpg'
 import { Route, Link } from 'react-router-dom'
 
-
-
 import func from '../../images/works/ishibetsu/function.png'
-import './works.css'
-
 import ishi_mock from '../../images/works/ishibetsu/phoston_work.jpg'
 import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
 import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
@@ -18,9 +14,23 @@ import aclogger_tweet from '../../images/works/aclogger/tweet.png'
 
 import WorkItem from './WorkItem'
 
+const thumbnail = {
+    'width' : '100%',
+}
+
+const workview = {
+    'padding':'1%',
+    'margin':'1%',
+}
+
 const BackButton = () => {
+
+    const backbutton = {
+        'margin' : '2%',
+    }
+
     return(
-        <div className = 'backbutton'>
+        <div style = {backbutton}>
             <Button variant="contained">
                 <Link to = './'>←Back</Link>
             </Button>   
@@ -31,8 +41,8 @@ const BackButton = () => {
 const Ishibetsu = () => {
     return(
         <div>
-            <Paper className = 'workview'>
-                    <img src = {phoston} className = 'thumbnail'></img>
+            <Paper style = {workview}>
+                    <img src = {phoston} style = {thumbnail}></img>
                     <h2>石別観光アプリ</h2>
                     
                     <h3>背景</h3>
@@ -41,7 +51,7 @@ const Ishibetsu = () => {
                     <div>要件定義やチームコミュニケーションなどの点で、多くの失敗と学びを経験しました。</div>   
 
                     <h3>主要機能等</h3>
-                    <img src = {func} className = 'thumbnail'></img>
+                    <img src = {func} style = {thumbnail}></img>
 
                     <h3>関連リンク</h3>
                     <a href = 'http://www.fun.ac.jp/~sisp/old_report/2017/02/poster02_A.pdf'>発表用ポスター</a><br></br>
@@ -65,8 +75,8 @@ const Ishibetsu = () => {
 const SCPGachaSimulator = () => {
     return(
         <div>
-            <Paper className = 'workview'>
-                <img src = {scp_mock} class = 'thumbnail'></img>
+            <Paper style = {workview}>
+                <img src = {scp_mock} style = {thumbnail}></img>
                 <h2>SCPガチャシミューレータ</h2>
 
                 <a href = 'https://scp-gacha-simulator.herokuapp.com/'>Link</a><br></br>
@@ -98,16 +108,22 @@ const SCPGachaSimulator = () => {
 }
 
 const AClogger = () => {
+
+    const tweet = {
+        'border':'solid 1px rgb(173, 173, 173)',
+        'width':'50%',
+    }
+
     return(
         <div>
-            <Paper className = 'workview'>
-                <img src = {aclogger_mock} className = 'thumbnail'></img>
+            <Paper style = {workview}>
+                <img src = {aclogger_mock} style = {thumbnail}></img>
                 <h2>ACLogger</h2>
                 <a href = 'https://aclogger.herokuapp.com/'>ACLogger</a>
                 <h3>背景</h3>
                 <div>個人開発でReactを使ってみたかった+各種コンテストサイトでの精進を一目で確認できるツールが欲しかった</div>
 
-                <img src = {aclogger_tweet} className = 'tweet'></img>
+                <img src = {aclogger_tweet} style = {tweet}></img>
                 
                 <h3>主要機能</h3>
                 <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>
@@ -134,8 +150,8 @@ const AClogger = () => {
 const Spock = () => {
     return(
         <div>
-            <Paper className = 'workview'>
-                    <img src = {spock_logo} className = 'thumbnail'></img>
+            <Paper style = {workview}>
+                    <img src = {spock_logo} style = {thumbnail}></img>
                     <h2>Spock</h2>
                     
                     <h3>背景</h3>
@@ -173,8 +189,8 @@ const Spock = () => {
 const Portfolio = () => {
     return(
         <div>
-            <Paper className = 'workview'>
-                <img src = {portfolio_mock} className = 'thumbnail'></img>
+            <Paper style = {workview}>
+                <img src = {portfolio_mock} style = {thumbnail}></img>
                 <h2>Portfolio</h2>
                 <p>このサイトです</p>
                 
@@ -201,7 +217,7 @@ const Portfolio = () => {
 const Oekaki = () => {
     return(
         <div>
-            <Paper className = 'workview'>
+            <Paper style = {workview}>
                 <p>in preparation...</p>
             </Paper>
             <BackButton />
@@ -255,9 +271,14 @@ const WorksList = ({match}) => {
 
 const Works = ({match}) => {
 
+    const style = {
+        'margin':'auto',
+        'width' : '60%',
+    }
+
     return(
 
-            <div className = 'main'>
+            <div style = {style}>
                 <Route exact path = {`${match.path}`} component = {WorksList}></Route>
                 <Route path = {`${match.path}/ishibetsu`} component = {Ishibetsu}></Route>
                 <Route path = {`${match.path}/scpgacha`} component = {SCPGachaSimulator}></Route>

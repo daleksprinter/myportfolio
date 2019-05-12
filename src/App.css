@@ -1,38 +1,5 @@
-.navitem{
-  padding:20px;
-}
-.navbarmenu{
-  float:left;
-
-  margin:auto;
-
-}
-
-.headerimg{
-  width:100%;
-}
-
-.blogtitle{
-
-  text-align: center;
-}
-.blogfont{
-  padding:20px;
-  font-size: 50px;
-  font-family: cursive;
-}
-
 body{
   background-color: rgb(231, 231, 231);
-}
-
-.linkIcon{
-  transform: scale(3,3);
-  width:50px;
-}
-
-.footer{
-  border:50px;
 }
 
 .item{
@@ -45,11 +12,7 @@ body{
   margin:2%;
 }
 
-.socialicon{
-  margin:3%;
-}
 
-.lnk{
-  margin:auto;
-  text-align: center;
-}
+
+
+
