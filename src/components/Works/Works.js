@@ -66,6 +66,14 @@ const Ishibetsu = () => {
                         <li>MySQL</li>
                         <li>PHP</li>
                     </ul>
+                    <p>サーバ移行後</p>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Flask</li>
+                        <li>uWSGI</li>
+                    </ul>
+
+                    
             </Paper>
             <BackButton />
         </div>
