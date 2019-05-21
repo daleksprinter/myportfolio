@@ -5,6 +5,7 @@ import { Route, Link } from 'react-router-dom'
 
 import func from '../../images/works/ishibetsu/function.png'
 import ishi_mock from '../../images/works/ishibetsu/phoston_work.jpg'
+import qucode from '../../images/works/ishibetsu/qrcode.png'
 import scp_mock from '../../images/works/scp-gacha/scpGachaThumb.png'
 import aclogger_mock from '../../images/works/aclogger/aclogger_thumb.png'
 import spock_logo from '../../images/works/spock/logo.png'
@@ -39,6 +40,9 @@ const BackButton = () => {
 }
 
 const Ishibetsu = () => {
+    const qr = {
+        'width':'30%',
+    }
     return(
         <div>
             <Paper style = {workview}>
@@ -53,9 +57,16 @@ const Ishibetsu = () => {
                     <h3>主要機能等</h3>
                     <img src = {func} style = {thumbnail}></img>
 
+                    <h3>インストール</h3>
+                    <img src = {qucode} style = {qr}></img>
+                    <div>上記QRCodeを読み込むことで、Android版のアプリをダウンロードすることが可能です。</div>
+                    <div>注：ハイブリッドアプリではありますが、デバッグ環境としてiOS9(iPhone6s)をメインで使用していたため、UIなど正常に動作しない可能性があります。</div>
+                    <div>また、サーバが動作していないタイミングがある可能性があります。ご了承ください。</div>
+
                     <h3>関連リンク</h3>
                     <a href = 'http://www.fun.ac.jp/~sisp/old_report/2017/02/poster02_A.pdf'>発表用ポスター</a><br></br>
                     <a href = 'https://digital.hakoshin.jp/date/2018-03-04/31816'>新聞記事</a>
+
 
                     <h3>使用技術</h3>
                     <ul>
