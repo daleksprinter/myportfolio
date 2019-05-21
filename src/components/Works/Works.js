@@ -60,8 +60,13 @@ const Ishibetsu = () => {
                     <h3>インストール</h3>
                     <img src = {qucode} style = {qr}></img>
                     <div>上記QRCodeを読み込むことで、Android版のアプリをダウンロードすることが可能です。</div>
-                    <div>注：ハイブリッドアプリではありますが、デバッグ環境としてiOS9(iPhone6s)をメインで使用していたため、UIなど正常に動作しない可能性があります。</div>
-                    <div>また、サーバが動作していないタイミングがある可能性があります。ご了承ください。</div>
+                    <div>注意</div>
+                    <ul>
+                        <li>ハイブリッドアプリではありますが、デバッグ環境としてiOS9(iPhone6s)をメインで使用していたため、UIなど正常に動作しない可能性があります。</li>
+                        <li>サーバが動作していないタイミングがある可能性があります。</li>
+                        <li>MapAPI等、古くなって使用できなくなっている場合があります。</li>
+                    </ul>
+
 
                     <h3>関連リンク</h3>
                     <a href = 'http://www.fun.ac.jp/~sisp/old_report/2017/02/poster02_A.pdf'>発表用ポスター</a><br></br>
@@ -80,6 +85,7 @@ const Ishibetsu = () => {
                     <p>サーバ移行後</p>
                     <ul>
                         <li>MySQL</li>
+                        <li>Docker</li>
                         <li>Flask</li>
                         <li>uWSGI</li>
                     </ul>
