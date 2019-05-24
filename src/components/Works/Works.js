@@ -88,6 +88,7 @@ const Ishibetsu = () => {
                         <li>Docker</li>
                         <li>Flask</li>
                         <li>uWSGI</li>
+                        <li>Nginx</li>
                     </ul>
 
                     
