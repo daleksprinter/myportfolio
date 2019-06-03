@@ -12,6 +12,8 @@ import spock_logo from '../../images/works/spock/logo.png'
 import portfolio_mock from '../../images/works/portfolio/portfolio_mock.png'
 import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
 import aclogger_tweet from '../../images/works/aclogger/tweet.png'
+import aclogger_demo from '../../images/works/aclogger/aclogger-demo.gif'
+import scp_gacha_demo from '../../images/works/scp-gacha/scpdemo.gif'
 
 import WorkItem from './WorkItem'
 
@@ -112,6 +114,8 @@ const SCPGachaSimulator = () => {
                 <div>ガチャのアイテムとしてSCPを使っています。(SCPについては、アプリ内に説明リンク等があります）</div>
                 
                 <h3>主要機能等</h3>
+                <h2>Demo</h2>
+                <img src = {scp_gacha_demo} ></img>
                 <div>ログイン機能</div>
                 <div>ガチャ機能</div>
                 <div>ポイントチャージ機能（無料）（課金した気持ちになりたい）</div>
@@ -153,6 +157,9 @@ const AClogger = () => {
                 <img src = {aclogger_tweet} style = {tweet}></img>
                 
                 <h3>主要機能</h3>
+
+                <h2>Demo</h2>
+                <img src = {aclogger_demo} ></img>
                 <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>
                 <div>(アカウントをお持ちでない方は、僕のAtCoderID(daleksprinter)をAtCoderの欄に入力してみてください。)</div>
                 <div>過去に解いた問題リストの要素をクリックすると、その提出に飛べる</div>
