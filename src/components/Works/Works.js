@@ -14,6 +14,7 @@ import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
 import aclogger_tweet from '../../images/works/aclogger/tweet.png'
 import aclogger_demo from '../../images/works/aclogger/aclogger-demo.gif'
 import scp_gacha_demo from '../../images/works/scp-gacha/scpdemo.gif'
+import twitter_inf_like_demo from '../../images/works/twitter-infinity-like/twitter-infinity-like-demo.gif'
 
 import WorkItem from './WorkItem'
 
@@ -186,7 +187,7 @@ const Spock = () => {
         <div>
             <Paper style = {workview}>
                     <img src = {spock_logo} style = {thumbnail}></img>
-                    <h2>Spock</h2>
+                    <h2>Spock（製作中）</h2>
                     
                     <h3>背景</h3>
                     <div>友人とGWにハッカソン的なことをしようという話になり、製作されました。</div>
@@ -220,6 +221,37 @@ const Spock = () => {
     )
 }
 
+const TwitterInfinityLike = () => {
+    return (
+        <div>
+            <Paper style = {workview}>
+                <h2>Twitter無限いいね押したったー（製作中）</h2>
+                <p>背景</p>
+                <div>Twitterで一度しかいいねできないことに不満がある人がいることに気づき、サードパーティで解消したいと思った。</div>
+
+                <h2>主要機能等</h2>
+                <h3>Demo</h3>
+                <img src = {twitter_inf_like_demo}></img>
+
+                <h3>今後の更新予定</h3>
+                <ul>
+                        <li>Tweet詳細をもっとおしゃれに</li>
+                        <li>ボタンUIをもっとリッチに</li>
+                        <li>ユーザ機能</li>
+                        <li>いいね回数をツイート＆ツイート元を引用したり</li>
+                </ul>
+
+                <h3>使用技術</h3>
+                    <ul>
+                        <li>Ruby on Rails 5</li>
+                        <li>Twitter Ruby Gem(Twitter API)</li>
+                    </ul>
+            </Paper>
+        </div>
+    )
+}
+
+
 const Portfolio = () => {
     return(
         <div>
@@ -247,6 +279,8 @@ const Portfolio = () => {
         </div>
     )
 }
+
+
 
 const Oekaki = () => {
     return(
@@ -288,6 +322,11 @@ const WorksList = ({match}) => {
                 img = {spock_logo}
                 description = '外出先で、面白そうな店や建物を見つけたけど、今はいけない...そんな時に、このスマホアプリで写真を撮るだけで、店の情報を読み込み、ストックしておきます。友人と共にハッカソン気分で製作中です。'
             />
+            <WorkItem
+                title = 'Twitter無限いいねおしたったー'
+                to = {`${match.path}/twitter-like`}
+                description = 'Tweetのいいねを１度しか押せないことに不満がある人のために作成しています。'
+            />
             <WorkItem 
                 title = 'ポートフォリオサイト' 
                 to = {`${match.path}/portfolio`}
@@ -299,9 +338,11 @@ const WorksList = ({match}) => {
                 to = {`${match.path}/oekaki`} 
                 description = 'in preparation'
             />
+            
         </div>
     )
 }
+
 
 const Works = ({match}) => {
 
@@ -318,6 +359,7 @@ const Works = ({match}) => {
                 <Route path = {`${match.path}/scpgacha`} component = {SCPGachaSimulator}></Route>
                 <Route path = {`${match.path}/aclogger`} component = {AClogger}></Route>
                 <Route path = {`${match.path}/portfolio`} component = {Portfolio}></Route>
+                <Route path = {`${match.path}/twitter-like`} component = {TwitterInfinityLike}></Route>
                 <Route path = {`${match.path}/spock`} component = {Spock}></Route>
                 <Route path = {`${match.path}/oekaki`} component = {Oekaki}></Route>
             </div>
