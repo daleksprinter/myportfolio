@@ -20,9 +20,9 @@ const NavItem = ({to, name}) => {
     'padding' : 20,
   }
   return(
-    <div style = {style}>
-      <Typography variant="h6" color='default'>
-        <Link to = {to}>{name}</Link>
+    <div style = {style} className = 'navitem'>
+      <Typography variant="h6" color='default' >
+        <Link to = {to} style = {{'color':'white',}}>{name}</Link>
       </Typography>
     </div>
   )
@@ -38,7 +38,6 @@ const Header = () => {
       const blogfont = {
         'padding':20,
         'font-size': 50,
-        'font-family': 'cursive',
       }
 
       return(
@@ -104,11 +103,11 @@ const Fundamental = () => {
               <li>Grade : 修士1年 </li>
           </ul>
           <div style = {sociallink}>
-                <a href = 'https://github.com/daleksprinter'>
+                <a href = 'https://github.com/daleksprinter' style = {{'color':'black',}}>
                   <IoLogoGithub size = '40' style = {socialicon} />                
                 </a>
 
-                <a href = 'https://twitter.com/Gxupu50ILbqonRQ'>
+                <a href = 'https://twitter.com/Gxupu50ILbqonRQ' style = {{'color':'black',}}>
                   <IoLogoTwitter size = '40' style = {socialicon}/>
                 </a>
           </div>

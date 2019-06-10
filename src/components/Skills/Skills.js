@@ -15,9 +15,7 @@ const Language = () => {
                     <li>JavaScript</li>
                     <li>node.js</li>
                     <li>Python</li>
-                    <li>Processing</li>
                     <li>SQL</li>
-                    <li>Shell Command</li>
                 </ul>
 
                 <p>フレームワーク等</p>
@@ -25,6 +23,7 @@ const Language = () => {
                     <li>Django</li>
                     <li>Flask</li>
                     <li>React</li>
+                    <li>Ruby on Rails</li>
                     <li>Cordova</li>
                 </ul>
 

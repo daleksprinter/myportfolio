@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Paper } from '@material-ui/core';
 import { Route, Link } from 'react-router-dom'
+import { blue } from '@material-ui/core/colors';
 
 const WorkItem = ({title, to, img, description}) => {
 
@@ -25,7 +26,7 @@ const WorkItem = ({title, to, img, description}) => {
             <div style = {workitemdesc}>
                 <h3>{title}</h3>
                 <div>{description}</div><br />
-                <Link to = {to}>Detial</Link>
+                <Link to = {to} style = {{'color':'blue',}}>Detial</Link>
             </div>
         </Paper>
     )

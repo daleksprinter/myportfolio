@@ -12,9 +12,9 @@ import spock_logo from '../../images/works/spock/logo.png'
 import portfolio_mock from '../../images/works/portfolio/portfolio_mock.png'
 import aclogger_logo from '../../images/works/aclogger/aclogger_logo.png'
 import aclogger_tweet from '../../images/works/aclogger/tweet.png'
-import aclogger_demo from '../../images/works/aclogger/aclogger-demo.gif'
-import scp_gacha_demo from '../../images/works/scp-gacha/scpdemo.gif'
 import twitter_inf_like_demo from '../../images/works/twitter-infinity-like/twitter-infinity-like-demo.gif'
+import chat_mock from '../../images/works/realtimechat/realtimechatmock.png'
+import spock_image from '../../images/works/spock/page_views.png'
 
 import WorkItem from './WorkItem'
 
@@ -101,6 +101,37 @@ const Ishibetsu = () => {
     )
 }
 
+const RealtimeChat = () => {
+    return (
+        <div>
+            <Paper style = {workview}>
+                <img src = {chat_mock} style = {thumbnail}></img>
+                <h2>RealTime Chat</h2>
+
+                <h3>背景</h3>
+                <div>Ruby on Railsの練習</div>
+
+                <p3>主要機能等</p3>
+                <h2>Demo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eWZt8fQM4uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <ul>
+                    <li>ログイン周り</li>
+                    <li>チャット機能（送信のみ）</li>
+                    <li>ルーム機能</li>
+                </ul>
+
+                <h3>使用技術</h3>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Ruby on Rails</li>
+                    <li>Devise</li>
+                    <li>ActionCable</li>
+                </ul>
+            </Paper>
+        </div>
+    )
+}
+
 const SCPGachaSimulator = () => {
     return(
         <div>
@@ -115,14 +146,18 @@ const SCPGachaSimulator = () => {
                 <div>ガチャのアイテムとしてSCPを使っています。(SCPについては、アプリ内に説明リンク等があります）</div>
                 
                 <h3>主要機能等</h3>
-                <h2>Demo</h2>
-                <img src = {scp_gacha_demo} ></img>
-                <div>ログイン機能</div>
-                <div>ガチャ機能</div>
-                <div>ポイントチャージ機能（無料）（課金した気持ちになりたい）</div>
+                <h4>Demo</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8jKdyq9Neyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <ul>
+                    <li>ログイン機能</li>
+                    <li>ガチャ機能</li>
+                    <li>ポイントチャージ機能（無料）（課金した気持ちになりたい）</li>
+                </ul>
                 <h4>今後追加したい要素</h4>
-                <div>ガチャ演出</div>
-                <div>得られたアイテムでなにかできる</div>
+                <ul>
+                    <li>ガチャ演出</li>
+                    <li>得られたアイテムでなにかできる</li>
+                </ul>
 
                 <h3>使用技術</h3>
                 <ul>
@@ -160,7 +195,7 @@ const AClogger = () => {
                 <h3>主要機能</h3>
 
                 <h2>Demo</h2>
-                <img src = {aclogger_demo} ></img>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XiahiXWeMHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>各サイトでのIDを入力すると、Github風のACヒートマップ、合計AC数、解いた問題を一覧（時系列順）</div>
                 <div>(アカウントをお持ちでない方は、僕のAtCoderID(daleksprinter)をAtCoderの欄に入力してみてください。)</div>
                 <div>過去に解いた問題リストの要素をクリックすると、その提出に飛べる</div>
@@ -196,6 +231,7 @@ const Spock = () => {
                     <div>自分の担当はサーバサイド です。APIの実装を行なっています。</div>
 
                     <h3>主要機能等</h3>
+                    <img src = {spock_image} style = {thumbnail}></img>
                     <ul>
                         <li>ユーザの追加</li>
                         <li>写真を撮るとその建物のデータを取得する（実装中）</li>
@@ -226,7 +262,7 @@ const TwitterInfinityLike = () => {
         <div>
             <Paper style = {workview}>
                 <h2>Twitter無限いいね押したったー（製作中）</h2>
-                <p>背景</p>
+                <h2>背景</h2>
                 <div>Twitterで一度しかいいねできないことに不満がある人がいることに気づき、サードパーティで解消したいと思った。</div>
 
                 <h2>主要機能等</h2>
@@ -263,7 +299,6 @@ const Portfolio = () => {
                 <h3>背景</h3>
                 <div>就活等で自分を知っていただくために作成しました。</div>
 
-                
                 <h3>使用技術</h3>
                 <ul>
                     <li>HTML/CSS</li>
@@ -305,6 +340,12 @@ const WorksList = ({match}) => {
                 description = '大学の開発プロジェクトでの成果物です。函館の地元である石別の、観光活性化を目的としたプロジェクトに参加しました。'
             />
             <WorkItem 
+                title = 'RealTimeChat' 
+                to = {`${match.path}/chat`} 
+                img = {chat_mock}
+                description = 'Ruby on Railsの練習がてら作成したリアルタイムチャットアプリです。4日ほど集中して作成しました。'
+            />
+            <WorkItem 
                 title = 'SCPガチャシミュレータ' 
                 to = {`${match.path}/scpgacha`} 
                 img = {scp_mock}
@@ -339,6 +380,7 @@ const WorksList = ({match}) => {
                 description = 'in preparation'
             />
             
+            
         </div>
     )
 }
@@ -362,6 +404,7 @@ const Works = ({match}) => {
                 <Route path = {`${match.path}/twitter-like`} component = {TwitterInfinityLike}></Route>
                 <Route path = {`${match.path}/spock`} component = {Spock}></Route>
                 <Route path = {`${match.path}/oekaki`} component = {Oekaki}></Route>
+                <Route path = {`${match.path}/chat`} component = {RealtimeChat}></Route>
             </div>
 
         )
