@@ -108,6 +108,8 @@ const RealtimeChat = () => {
                 <img src = {chat_mock} style = {thumbnail}></img>
                 <h2>RealTime Chat</h2>
 
+                <a href = 'https://rapiorailschatapp.herokuapp.com'>Link</a><br></br>
+
                 <h3>背景</h3>
                 <div>Ruby on Railsの練習</div>
 
