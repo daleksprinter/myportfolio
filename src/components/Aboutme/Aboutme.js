@@ -34,6 +34,8 @@ const Intern = () => {
             </ul>
             <ul>
                 <li>Voyage Group Treasure (2019/08/12~ 予定）</li>
+                <li>DMM.com DMM GUILD (2019/09/03~ 予定）</li>
+                <li>楽天株式会社 就業型インターン (2019/09/24~ 予定）</li>
             </ul>
 
         </Paper>
