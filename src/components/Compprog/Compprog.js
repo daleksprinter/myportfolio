@@ -57,7 +57,6 @@ const Other = () => {
         <Paper className = 'elm'>
             <h4>その他</h4>
             <div>未来大学競技プログラミングサークル FunCoder　所属</div>
-            <div>ICPC2019国内予選　参加予定</div>
             <div>Paiza Sランク</div>
             <img src = {paizarank} style = {paiza}></img><br />
             <a href = 'https://dalekspritner.hatenablog.com/'>競技プログラミング覚書ブログ</a>
